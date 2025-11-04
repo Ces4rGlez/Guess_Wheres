@@ -2,7 +2,7 @@
 // Fecha: 30/Oct/2025
 // Lógica del juego
 
-const places = [
+const allPlaces = [
     { id: 1, name: "Statue of Liberty", location: "USA", image: "StatueLiberty.jpg" },
     { id: 2, name: "National Mall", location: "Washington D.C.", image: "NationalMall.png" },
     { id: 3, name: "Hollywood Sign", location: "Los Angeles, CA", image: "HollywoodSign.jpg" },
@@ -26,8 +26,27 @@ const places = [
     { id: 21, name: "Stone Henge", location: "UK", image: "Stonehenge.jpg" },
     { id: 22, name: "Howard Castle", location: "UK", image: "CastleHoward.jpg" },
     { id: 23, name: "Big Ben", location: "London, UK", image: "BigBen.jpg" },
-    { id: 24, name: "Holy Island", location: "UK", image: "HolyIsland.jpg" }
+    { id: 24, name: "Holy Island", location: "UK", image: "HolyIsland.jpg" },
+    { id: 25, name: "MuseumOfModernArt", location: "Scotland, UK", image: "MuseumOfModernArt.jpg" },
+    { id: 26, name: "Space Center", location: "TX", image: "SpaceCenter.jpg" },
+    { id: 27, name: "Grand Central Terminal", location: "NY", image: "GrandCentralTerminal.jpg" },
+    { id: 28, name: "Ark Encounter", location: "KY", image: "ArkEncounter.jpg" },
+    { id: 29, name: "Yellowstone National Park", location: "WY", image: "Yellowstone.jpg"},
+    { id: 30, name: "Field Museum", location: "IL", image: "FieldM.jpg" },
+    { id: 31, name: "Venice Beach", location: "CA", image: "VeniceBeach.jpg" },
+    { id: 32, name: "Brooklyn Bridge", location: "NY", image: "BrooklynBrid.jpg" },
+    { id: 33, name: "Grand Teton National Park", location: "WY", image: "GrandTetonNationalPark.jpg"},
+    { id: 34, name: "Bryce Canyon National Park", location: "UT", image: "BryceCanyon.jpg"},
+    { id: 35, name: "Fisherman's Wharf", location: "CA", image: "Fisherman's.jpg" },
+    { id: 36, name: "Universal Studios", location: "FL", image: "UniversalStudios.jpg" },
+    { id: 37, name: "Times Square", location: "NY", image: "TimesSquare.jpg" },
+    { id: 38, name: "Glacier National Park", location: "MT", image: "GlacierNationalPark.jpg"},
+    { id:39, name: "Garden of the Gods", location: "CO", image: "GardenOfGods.jpg"},
+    { id: 40, name: "Walt Disney", location: "FL", image: "WaltDisney.jpg"},
+    { id: 41, name: "Mall of America", location: "MN", image: "MallOfAmerica.jpg"}
 ];
+
+let places = allPlaces.slice(); // Default to all places
 
 let currentIndex = 0;
 let isAnimating = false;
@@ -36,8 +55,13 @@ let seconds = 0;
 let minutes = 0;
 
 const startScreen = document.getElementById('startScreen');
+const difficultyScreen = document.getElementById('difficultyScreen');
 const gameScreen = document.getElementById('gameScreen');
 const playBtn = document.getElementById('playBtn');
+const easyBtn = document.getElementById('easyBtn');
+const mediumBtn = document.getElementById('mediumBtn');
+const hardBtn = document.getElementById('hardBtn');
+const backBtn = document.getElementById('backBtn');
 const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
 const restartBtn = document.getElementById('restartBtn');
@@ -51,6 +75,10 @@ const currentImage = document.getElementById('currentImage');
 totalSlides.textContent = places.length;
 
 playBtn.addEventListener('click', startGame);
+easyBtn.addEventListener('click', () => selectDifficulty('easy'));
+mediumBtn.addEventListener('click', () => selectDifficulty('medium'));
+hardBtn.addEventListener('click', () => selectDifficulty('hard'));
+backBtn.addEventListener('click', backToStart);
 prevBtn.addEventListener('click', previousSlide);
 nextBtn.addEventListener('click', nextSlide);
 restartBtn.addEventListener('click', restartGame);
@@ -66,13 +94,37 @@ document.addEventListener('keydown', (e) => {
 });
 
 async function startGame() {
+    startScreen.style.display = 'none';
+    difficultyScreen.style.display = 'flex';
+}
+
+function selectDifficulty(difficulty) {
+    if (difficulty === 'easy') {
+        places = allPlaces.slice(0, 14);
+    } else if (difficulty === 'medium') {
+        places = allPlaces.slice(14, 28);
+    } else if (difficulty === 'hard') {
+        places = allPlaces.slice(28, 41);
+    }
+
+    totalSlides.textContent = places.length;
+    currentIndex = 0;
+
+    proceedToGame();
+}
+
+async function proceedToGame() {
     await showAnimation();
 
-    startScreen.style.display = 'none';
+    difficultyScreen.style.display = 'none';
     gameScreen.style.display = 'block';
     startTimer();
     updateDisplay();
-    showAnimation();
+}
+
+function backToStart() {
+    difficultyScreen.style.display = 'none';
+    startScreen.style.display = 'flex';
 }
 
 function startTimer() {
