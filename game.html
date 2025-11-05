@@ -1,141 +1,160 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Guess Where's</title>
-    <link rel="stylesheet" href="game.css">
-</head>
-<body>
+    <link rel="stylesheet" href="game.css" />
+  </head>
+  <body>
     <!--
     DESARROLLADOR: González Avalos César Fernando
     FECHA: 30/Oct/2025
     Interfaz principal del juego "Guess Where's"
     -->
+
     <!-- Pantalla de inicio -->
     <div id="startScreen" class="start-screen">
-        <div class="start-content">
-            <div class="title-container">
-                <h1 class="start-title">
-                    <span class="title-accent">G</span>uess Where's
-                </h1>
-                <div class="title-underline"></div>
-            </div>
-            <p class="start-subtitle">Do you recognize these famous places?
-</p>
-            <button id="playBtn" class="play-button">
-                <span class="play-icon">▶</span>
-                <span>START</span>
-            </button>
-            <div class="futuristic-elements">
-                <div class="tech-circle"></div>
-                <div class="tech-circle"></div>
-                <div class="tech-circle"></div>
-                <div class="tech-circle"></div>
-            </div>
+      <div class="start-content">
+        <div class="title-container">
+          <h1 class="start-title">
+            <span class="title-accent">G</span>uess Where's
+          </h1>
+          <div class="title-underline"></div>
         </div>
+        <p class="start-subtitle">Do you recognize these famous places?</p>
+        <button id="playBtn" class="play-button">
+          <span class="play-icon">▶</span>
+          <span>START</span>
+        </button>
+        <div class="futuristic-elements">
+          <div class="tech-circle"></div>
+          <div class="tech-circle"></div>
+          <div class="tech-circle"></div>
+          <div class="tech-circle"></div>
+        </div>
+      </div>
 
-        <div class="particle-container">
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-        </div>
+      <div class="particle-container">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+      </div>
     </div>
 
     <!-- Pantalla de dificultad -->
-    <div id="difficultyScreen" class="difficulty-screen" style="display: none;">
-        <div class="difficulty-content">
-            <h2 class="difficulty-title">Select the Difficulty</h2>
-            <div class="difficulty-buttons">
-                <button id="easyBtn" class="difficulty-button easy">
-                    <span class="difficulty-icon">★</span>
-                    <span>Easy</span>
-                    <span class="difficulty-desc">14 places</span>
-                </button>
-                <button id="mediumBtn" class="difficulty-button medium">
-                    <span class="difficulty-icon">🗲</span>
-                    <span>Medium</span>
-                    <span class="difficulty-desc">14 places</span>
-                </button>
-                <button id="hardBtn" class="difficulty-button hard">
-                    <span class="difficulty-icon">🔥</span>
-                    <span>Extreme</span>
-                    <span class="difficulty-desc">13 places</span>
-                </button>
-            </div>
-            <button id="backBtn" class="back-button">← Return</button>
+    <div id="difficultyScreen" class="difficulty-screen" style="display: none">
+      <div class="difficulty-content">
+        <h2 class="difficulty-title">Select the Difficulty</h2>
+        <div class="difficulty-buttons">
+          <button id="easyBtn" class="difficulty-button easy">
+            <span class="difficulty-icon">★</span>
+            <span>Easy</span>
+            <span class="difficulty-desc">14 places</span>
+          </button>
+          <button id="mediumBtn" class="difficulty-button medium">
+            <span class="difficulty-icon">🗲</span>
+            <span>Medium</span>
+            <span class="difficulty-desc">14 places</span>
+          </button>
+          <button id="hardBtn" class="difficulty-button hard">
+            <span class="difficulty-icon">🔥</span>
+            <span>Extreme</span>
+            <span class="difficulty-desc">13 places</span>
+          </button>
         </div>
+        <button id="backBtn" class="back-button">← Return</button>
+      </div>
     </div>
 
     <!-- Pantalla del juego -->
-    <div id="gameScreen" class="game-screen" style="display: none;">
-        <div class="game-header">
-            <div class="timer-container">
-                <svg class="timer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <polyline points="12 6 12 12 16 14"></polyline>
-                </svg>
-                <span id="timer">00:00</span>
+    <div id="gameScreen" class="game-screen" style="display: none">
+      <div class="game-header">
+        <div class="timer-container">
+          <svg class="timer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
+          <span id="timer">00:00</span>
+        </div>
+        <h2 class="game-title">Do you know its name?</h2>
+        <div class="header-controls">
+          <div class="counter">
+            <span id="currentSlide">1</span> / <span id="totalSlides">24</span>
+          </div>
+          <button id="restartBtn" class="restart-button">
+            <span class="restart-icon" style="font-size: 30px">⭮</span>
+          </button>
+        </div>
+      </div>
+      
+      <div id="hintsPanel" class="hints-panel" hidden>
+        <div class="hint-card">
+          <div class="hint-badge">Hint 1</div>
+          <p id="hint1Text" class="hint-text"></p>
+        </div>
+        <div class="hint-card">
+          <div class="hint-badge">Hint 2</div>
+          <p id="hint2Text" class="hint-text"></p>
+        </div>
+      </div>
+
+      <!-- Overlay de animación -->
+      <div id="animationOverlay" class="animation-overlay">
+        <div class="shuffling-cards">
+          <div class="shuffle-card"></div>
+          <div class="shuffle-card"></div>
+          <div class="shuffle-card"></div>
+          <div class="shuffle-card"></div>
+          <div class="shuffle-card"></div>
+        </div>
+        <div class="transition-text ready-text">Ready?</div>
+        <div class="transition-text go-text">Go!</div>
+      </div>
+
+      <div class="carousel-container">
+        <button id="prevBtn" class="nav-button prev">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+
+        <div class="image-container">
+          <div class="postcard">
+            <div class="postcard-border">
+              <img id="currentImage" src="images/StatueLiberty.jpg" alt="Lugar misterioso" />
+              <!-- Botón de pistas: esquina superior derecha de la imagen -->
+              <button
+                id="hintToggleBtn"
+                class="hint-button"
+                aria-expanded="false"
+                aria-controls="hintsPanel"
+                title="Ver pistas">
+                <span class="hint-icon">?</span>
+              </button>
             </div>
-            <h2 class="game-title">Do you know its name?</h2>
-            <div class="header-controls">
-                <div class="counter">
-                    <span id="currentSlide">1</span> / <span id="totalSlides">24</span>
-                </div>
-                <button id="restartBtn" class="restart-button">
-                    <span class="restart-icon" style="font-size: 30px;">⭮</span>
-                </button>
+
+            <div class="postcard-stamp">
+              <div class="stamp-inner"><span id="imageNumber">1</span></div>
             </div>
+            <div class="postcard-lines">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+          </div>
         </div>
 
-        <!-- Overlay de animación -->
-        <div id="animationOverlay" class="animation-overlay">
-            <div class="shuffling-cards">
-                <div class="shuffle-card"></div>
-                <div class="shuffle-card"></div>
-                <div class="shuffle-card"></div>
-                <div class="shuffle-card"></div>
-                <div class="shuffle-card"></div>
-            </div>
-            <div class="transition-text ready-text">Ready?</div>
-            <div class="transition-text go-text">Go!</div>
-        </div>
-
-        <div class="carousel-container">
-            <button id="prevBtn" class="nav-button prev">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-                    <polyline points="15 18 9 12 15 6"></polyline>
-                </svg>
-            </button>
-
-            <div class="image-container">
-                <div class="postcard">
-                    <div class="postcard-border">
-                        <img id="currentImage" src="images/StatueLiberty.jpg" alt="Lugar misterioso">
-                    </div>
-                    <div class="postcard-stamp">
-                        <div class="stamp-inner">
-                            <span id="imageNumber">1</span>
-                        </div>
-                    </div>
-                    <div class="postcard-lines">
-                        <div class="line"></div>
-                        <div class="line"></div>
-                        <div class="line"></div>
-                    </div>
-                </div>
-            </div>
-
-            <button id="nextBtn" class="nav-button next">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-                    <polyline points="9 18 15 12 9 6"></polyline>
-                </svg>
-            </button>
-        </div>
+        <button id="nextBtn" class="nav-button next">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+      </div>
     </div>
 
     <script src="game.js"></script>
-</body>
+  </body>
 </html>
