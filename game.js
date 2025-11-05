@@ -259,6 +259,86 @@ const hintsByImage = {
     "Ancient stones in England, UK.",
     "Circle of huge standing rocks.",
   ],
+  "CastleHoward.jpg": [
+    "A famous baroque castle in Yorkshire.",
+    "It has appeared in several British films."
+  ],
+  "BigBen.jpg": [
+    "Its bell weighs more than 13 tons.",
+    "One of the most iconic symbols of London."
+  ],
+  "HolyIsland.jpg": [
+    "You can only reach it when the tide is low.",
+    "Also known as Lindisfarne."
+  ],
+  "MuseumOfModernArt.jpg": [
+    "Located in Glasgow, Scotland.",
+    "Exhibits contemporary and modern art."
+  ],
+  "SpaceCenter.jpg": [
+    "Learn about NASA and space exploration here.",
+    "Located in Houston, Texas."
+  ],
+  "GrandCentralTerminal.jpg": [
+    "A train station with a huge clock in the main hall.",
+    "One of New York City's most famous landmarks."
+  ],
+  "ArkEncounter.jpg": [
+    "A life-sized replica of a biblical ship.",
+    "Located in Kentucky."
+  ],
+  "Yellowstone.jpg": [
+    "Famous for the Old Faithful geyser.",
+    "The first national park in the world."
+  ],
+  "FieldM.jpg": [
+    "A natural history museum in Chicago.",
+    "Home to the famous T. rex skeleton named Sue."
+  ],
+  "VeniceBeach.jpg": [
+    "Known for its boardwalk and street performers.",
+    "Located in Los Angeles, California."
+  ],
+  "BrooklynBrid.jpg": [
+    "Connects Manhattan to another New York borough.",
+    "Opened in 1883."
+  ],
+  "GrandTetonNationalPark.jpg": [
+    "Famous for its sharp mountain peaks and clear lakes.",
+    "Located near Yellowstone in Wyoming."
+  ],
+  "BryceCanyon.jpg": [
+    "Known for its rock formations called 'hoodoos'.",
+    "Located in southern Utah."
+  ],
+  "Fisherman's.jpg": [
+    "Famous pier with sea lions and souvenir shops.",
+    "One of San Francisco’s most visited places."
+  ],
+  "UniversalStudios.jpg": [
+    "Theme park dedicated to movies and TV shows.",
+    "Located in Orlando, Florida."
+  ],
+  "TimesSquare.jpg": [
+    "Known for its giant electronic billboards.",
+    "Famous New Year’s Eve celebration spot."
+  ],
+  "GlacierNationalPark.jpg": [
+    "Located in Montana, full of mountains and glacial lakes.",
+    "Part of the U.S.-Canada border region."
+  ],
+  "GardenOfGods.jpg": [
+    "Park with stunning red rock formations.",
+    "Located in Colorado Springs."
+  ],
+  "WaltDisney.jpg": [
+    "The most magical place on Earth.",
+    "Famous for its castle and Disney characters."
+  ],
+  "MallOfAmerica.jpg": [
+    "One of the largest shopping malls in the world.",
+    "Located in Minnesota, with an indoor theme park."
+  ]
 };
 
 // ===== STATE =====
