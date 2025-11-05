@@ -4,22 +4,97 @@
 
 // ===== DATA =====
 const allPlaces = [
-  { id: 1, name: "Statue of Liberty", location: "USA", image: "StatueLiberty.jpg" },
-  { id: 2, name: "National Mall", location: "Washington D.C.", image: "NationalMall.png" },
-  { id: 3, name: "Hollywood Sign", location: "Los Angeles, CA", image: "HollywoodSign.jpg" },
-  { id: 4, name: "Golden Gate Bridge", location: "San Francisco, CA", image: "GoldenGate.jpg" },
-  { id: 5, name: "Gateway Arch", location: "St. Louis, Missouri", image: "GatewayArch.jpg" },
-  { id: 6, name: "Space Needle", location: "Seattle, Washington", image: "SpaceNeedle.jpeg" },
-  { id: 7, name: "Cloud Gate", location: "Chicago, Illinois", image: "CloudGate.jpg" },
-  { id: 8, name: "Niagara Falls", location: "New York State", image: "NiagaraFalls.jpg" },
-  { id: 9, name: "Mount Rushmore", location: "South Dakota", image: "MountRushmore.jpg" },
-  { id: 10, name: "Monument Valley", location: "Utah", image: "MonumentValley.jpg" },
-  { id: 11, name: "Lake O'Hara", location: "British Columbia, Canada", image: "LakeOHara.jpg" },
-  { id: 12, name: "Banff National Park", location: "Canada", image: "BanffNationalPark.jpg" },
-  { id: 13, name: "Badlands", location: "Alberta, Canada", image: "Badlands.png" },
-  { id: 14, name: "Parliament Hill", location: "Ottawa, Canada", image: "ParliamentHill.jpg" },
+  {
+    id: 1,
+    name: "Statue of Liberty",
+    location: "USA",
+    image: "StatueLiberty.jpg",
+  },
+  {
+    id: 2,
+    name: "National Mall",
+    location: "Washington D.C.",
+    image: "NationalMall.png",
+  },
+  {
+    id: 3,
+    name: "Hollywood Sign",
+    location: "Los Angeles, CA",
+    image: "HollywoodSign.jpg",
+  },
+  {
+    id: 4,
+    name: "Golden Gate Bridge",
+    location: "San Francisco, CA",
+    image: "GoldenGate.jpg",
+  },
+  {
+    id: 5,
+    name: "Gateway Arch",
+    location: "St. Louis, Missouri",
+    image: "GatewayArch.jpg",
+  },
+  {
+    id: 6,
+    name: "Space Needle",
+    location: "Seattle, Washington",
+    image: "SpaceNeedle.jpeg",
+  },
+  {
+    id: 7,
+    name: "Cloud Gate",
+    location: "Chicago, Illinois",
+    image: "CloudGate.jpg",
+  },
+  {
+    id: 8,
+    name: "Niagara Falls",
+    location: "New York State",
+    image: "NiagaraFalls.jpg",
+  },
+  {
+    id: 9,
+    name: "Mount Rushmore",
+    location: "South Dakota",
+    image: "MountRushmore.jpg",
+  },
+  {
+    id: 10,
+    name: "Monument Valley",
+    location: "Utah",
+    image: "MonumentValley.jpg",
+  },
+  {
+    id: 11,
+    name: "Lake O'Hara",
+    location: "British Columbia, Canada",
+    image: "LakeOHara.jpg",
+  },
+  {
+    id: 12,
+    name: "Banff National Park",
+    location: "Canada",
+    image: "BanffNationalPark.jpg",
+  },
+  {
+    id: 13,
+    name: "Badlands",
+    location: "Alberta, Canada",
+    image: "Badlands.png",
+  },
+  {
+    id: 14,
+    name: "Parliament Hill",
+    location: "Ottawa, Canada",
+    image: "ParliamentHill.jpg",
+  },
   { id: 15, name: "The Cotswolds", location: "UK", image: "Cotswolds.jpg" },
-  { id: 16, name: "Harvard", location: "Massachusetts, USA", image: "Harvard.jpeg" },
+  {
+    id: 16,
+    name: "Harvard",
+    location: "Massachusetts, USA",
+    image: "Harvard.jpeg",
+  },
   { id: 17, name: "Harrods", location: "UK", image: "Harrods.jpeg" },
   { id: 18, name: "Cambridge", location: "USA", image: "Cambridge.jpg" },
   { id: 19, name: "Yale", location: "UK", image: "Yale.jpg" },
@@ -28,46 +103,162 @@ const allPlaces = [
   { id: 22, name: "Howard Castle", location: "UK", image: "CastleHoward.jpg" },
   { id: 23, name: "Big Ben", location: "London, UK", image: "BigBen.jpg" },
   { id: 24, name: "Holy Island", location: "UK", image: "HolyIsland.jpg" },
-  { id: 25, name: "MuseumOfModernArt", location: "Scotland, UK", image: "MuseumOfModernArt.jpg" },
+  {
+    id: 25,
+    name: "MuseumOfModernArt",
+    location: "Scotland, UK",
+    image: "MuseumOfModernArt.jpg",
+  },
   { id: 26, name: "Space Center", location: "TX", image: "SpaceCenter.jpg" },
-  { id: 27, name: "Grand Central Terminal", location: "NY", image: "GrandCentralTerminal.jpg" },
+  {
+    id: 27,
+    name: "Grand Central Terminal",
+    location: "NY",
+    image: "GrandCentralTerminal.jpg",
+  },
   { id: 28, name: "Ark Encounter", location: "KY", image: "ArkEncounter.jpg" },
-  { id: 29, name: "Yellowstone National Park", location: "WY", image: "Yellowstone.jpg" },
+  {
+    id: 29,
+    name: "Yellowstone National Park",
+    location: "WY",
+    image: "Yellowstone.jpg",
+  },
   { id: 30, name: "Field Museum", location: "IL", image: "FieldM.jpg" },
   { id: 31, name: "Venice Beach", location: "CA", image: "VeniceBeach.jpg" },
-  { id: 32, name: "Brooklyn Bridge", location: "NY", image: "BrooklynBrid.jpg" },
-  { id: 33, name: "Grand Teton National Park", location: "WY", image: "GrandTetonNationalPark.jpg" },
-  { id: 34, name: "Bryce Canyon National Park", location: "UT", image: "BryceCanyon.jpg" },
-  { id: 35, name: "Fisherman's Wharf", location: "CA", image: "Fisherman's.jpg" },
-  { id: 36, name: "Universal Studios", location: "FL", image: "UniversalStudios.jpg" },
+  {
+    id: 32,
+    name: "Brooklyn Bridge",
+    location: "NY",
+    image: "BrooklynBrid.jpg",
+  },
+  {
+    id: 33,
+    name: "Grand Teton National Park",
+    location: "WY",
+    image: "GrandTetonNationalPark.jpg",
+  },
+  {
+    id: 34,
+    name: "Bryce Canyon National Park",
+    location: "UT",
+    image: "BryceCanyon.jpg",
+  },
+  {
+    id: 35,
+    name: "Fisherman's Wharf",
+    location: "CA",
+    image: "Fisherman's.jpg",
+  },
+  {
+    id: 36,
+    name: "Universal Studios",
+    location: "FL",
+    image: "UniversalStudios.jpg",
+  },
   { id: 37, name: "Times Square", location: "NY", image: "TimesSquare.jpg" },
-  { id: 38, name: "Glacier National Park", location: "MT", image: "GlacierNationalPark.jpg" },
-  { id:39, name: "Garden of the Gods", location: "CO", image: "GardenOfGods.jpg" },
+  {
+    id: 38,
+    name: "Glacier National Park",
+    location: "MT",
+    image: "GlacierNationalPark.jpg",
+  },
+  {
+    id: 39,
+    name: "Garden of the Gods",
+    location: "CO",
+    image: "GardenOfGods.jpg",
+  },
   { id: 40, name: "Walt Disney", location: "FL", image: "WaltDisney.jpg" },
-  { id: 41, name: "Mall of America", location: "MN", image: "MallOfAmerica.jpg" }
+  {
+    id: 41,
+    name: "Mall of America",
+    location: "MN",
+    image: "MallOfAmerica.jpg",
+  },
 ];
 
 const hintsByImage = {
   "StatueLiberty.jpg": [
-    "Se inauguró en 1886 como regalo internacional.",
-    "Su color actual proviene de la pátina del cobre."
+    "Famous statue in New York City, USA.",
+    "Green lady holding a torch on an island.",
   ],
   "NationalMall.png": [
-    "Gran explanada rodeada de museos del Smithsonian.",
-    "Aquí está el Monumento a Washington."
+    "Long park in Washington, D.C., USA.",
+    "Between the Capitol and the Lincoln Memorial.",
   ],
   "HollywoodSign.jpg": [
-    "Comenzó como un anuncio en 1923.",
-    "Está en las colinas del Monte Lee."
+    "Big white letters in Los Angeles, California.",
+    "On a hillside above the city.",
   ],
   "GoldenGate.jpg": [
-    "Color oficial: International Orange.",
-    "Conecta San Francisco con el condado de Marin."
+    "Iconic red bridge in San Francisco, California.",
+    "Often seen in fog over the bay.",
   ],
-  "TimesSquare.jpg": [
-    "Conocido por sus pantallas gigantes.",
-    "Lugar emblemático para celebrar Año Nuevo."
-  ]
+  "GatewayArch.jpg": [
+    "Silver arch in St. Louis, Missouri.",
+    "Shaped like a giant steel rainbow.",
+  ],
+  "SpaceNeedle.jpeg": [
+    "Tall tower in Seattle, Washington.",
+    "UFO-shaped top with city views.",
+  ],
+  "CloudGate.jpg": [
+    "Shiny sculpture in Chicago, Illinois.",
+    "Mirror “bean” in Millennium Park.",
+  ],
+  "NiagaraFalls.jpg": [
+    "Huge waterfalls in New York State, USA.",
+    "Boats go close to the falls.",
+  ],
+  "MountRushmore.jpg": [
+    "Carved faces in South Dakota, USA.",
+    "Four presidents on a granite cliff.",
+  ],
+  "MonumentValley.jpg": [
+    "Red rock mesas in Utah, USA.",
+    "Classic Western movie scenery.",
+  ],
+  "LakeOHara.jpg": [
+    "Turquoise lake in British Columbia, Canada.",
+    "Alpine views and clear water.",
+  ],
+  "BanffNationalPark.jpg": [
+    "Mountain park in Canada.",
+    "Blue lakes and the Rockies.",
+  ],
+  "Badlands.png": [
+    "Eroded hills in Alberta, Canada.",
+    "Hoodoos and dinosaur history.",
+  ],
+  "ParliamentHill.jpg": [
+    "Government buildings in Ottawa, Canada.",
+    "Gothic towers by the river.",
+  ],
+  "Cotswolds.jpg": [
+    "Countryside in England, UK.",
+    "Stone cottages and rolling hills.",
+  ],
+  "Harvard.jpeg": [
+    "Historic university in Massachusetts, USA.",
+    "Red-brick yard and ivy look.",
+  ],
+  "Harrods.jpeg": [
+    "Luxury store in London, UK.",
+    "Famous green-and-gold building.",
+  ],
+  "Cambridge.jpg": [
+    "City next to Boston, Massachusetts, USA.",
+    "Home to Harvard and MIT.",
+  ],
+  "Yale.jpg": [
+    "Ivy League school in New Haven, USA.",
+    "Gothic-style campus buildings.",
+  ],
+  "Oxford.png": ["University city in England, UK.", "Old colleges and spires."],
+  "Stonehenge.jpg": [
+    "Ancient stones in England, UK.",
+    "Circle of huge standing rocks.",
+  ],
 };
 
 // ===== STATE =====
@@ -172,7 +363,10 @@ function backToStart() {
 function startTimer() {
   timerInterval = setInterval(() => {
     seconds++;
-    if (seconds === 60) { seconds = 0; minutes++; }
+    if (seconds === 60) {
+      seconds = 0;
+      minutes++;
+    }
     updateTimerDisplay();
   }, 1000);
 }
@@ -183,7 +377,10 @@ function updateTimerDisplay() {
 }
 function resetTimer() {
   if (timerInterval) clearInterval(timerInterval);
-  seconds = 0; minutes = 0; updateTimerDisplay(); startTimer();
+  seconds = 0;
+  minutes = 0;
+  updateTimerDisplay();
+  startTimer();
 }
 
 // ===== ANIMACIÓN =====
@@ -199,26 +396,39 @@ function showAnimation() {
       card.style.setProperty("--ty", `${ty}px`);
       card.style.setProperty("--r", `${r}deg`);
     });
-    setTimeout(() => { animationOverlay.classList.remove("active"); resolve(); }, 2000);
+    setTimeout(() => {
+      animationOverlay.classList.remove("active");
+      resolve();
+    }, 2000);
   });
 }
 
 // ===== NAVEGACIÓN =====
 async function nextSlide() {
   if (isAnimating) return;
-  isAnimating = true; prevBtn.disabled = true; nextBtn.disabled = true;
+  isAnimating = true;
+  prevBtn.disabled = true;
+  nextBtn.disabled = true;
   await showAnimation();
   currentIndex = (currentIndex + 1) % places.length;
-  updateDisplay(); resetTimer();
-  isAnimating = false; prevBtn.disabled = false; nextBtn.disabled = false;
+  updateDisplay();
+  resetTimer();
+  isAnimating = false;
+  prevBtn.disabled = false;
+  nextBtn.disabled = false;
 }
 async function previousSlide() {
   if (isAnimating) return;
-  isAnimating = true; prevBtn.disabled = true; nextBtn.disabled = true;
+  isAnimating = true;
+  prevBtn.disabled = true;
+  nextBtn.disabled = true;
   await showAnimation();
   currentIndex = (currentIndex - 1 + places.length) % places.length;
-  updateDisplay(); resetTimer();
-  isAnimating = false; prevBtn.disabled = false; nextBtn.disabled = false;
+  updateDisplay();
+  resetTimer();
+  isAnimating = false;
+  prevBtn.disabled = false;
+  nextBtn.disabled = false;
 }
 
 // ===== RENDER =====
@@ -252,7 +462,9 @@ function renderHintsForCurrent() {
 // ===== REINICIO =====
 function restartGame() {
   if (timerInterval) clearInterval(timerInterval);
-  seconds = 0; minutes = 0; updateTimerDisplay();
+  seconds = 0;
+  minutes = 0;
+  updateTimerDisplay();
 
   hintsPanel.setAttribute("hidden", "");
   hintToggleBtn.setAttribute("aria-expanded", "false");
@@ -260,7 +472,9 @@ function restartGame() {
   gameScreen.style.display = "none";
   startScreen.style.display = "flex";
 
-  isAnimating = false; prevBtn.disabled = false; nextBtn.disabled = false;
+  isAnimating = false;
+  prevBtn.disabled = false;
+  nextBtn.disabled = false;
 
   places = allPlaces.slice();
   totalSlides.textContent = places.length;
