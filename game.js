@@ -180,116 +180,103 @@ const allPlaces = [
 const hintsByImage = {
   "StatueLiberty.jpg": [
     "Famous statue in New York City, USA.",
-    "Green lady holding a torch on an island.",
+    "In Spanish: Estatua de la Libertad."
   ],
   "NationalMall.png": [
     "Long park in Washington, D.C., USA.",
-    "Between the Capitol and the Lincoln Memorial.",
+    "Between the Capitol and the Lincoln Memorial."
   ],
   "HollywoodSign.jpg": [
     "Big white letters in Los Angeles, California.",
-    "On a hillside above the city.",
+    "On a hillside above the city."
   ],
   "GoldenGate.jpg": [
     "Iconic red bridge in San Francisco, California.",
-    "Often seen in fog over the bay.",
+    "Its name means 'Puerta Dorada' in Spanish."
   ],
   "GatewayArch.jpg": [
     "Silver arch in St. Louis, Missouri.",
-    "Shaped like a giant steel rainbow.",
+    "Shaped like a giant steel rainbow."
   ],
   "SpaceNeedle.jpeg": [
     "Tall tower in Seattle, Washington.",
-    "UFO-shaped top with city views.",
+    "Looks like a UFO on top of a tower."
   ],
   "CloudGate.jpg": [
     "Shiny sculpture in Chicago, Illinois.",
-    "Mirror “bean” in Millennium Park.",
+    "Also called 'The Bean'."
   ],
   "NiagaraFalls.jpg": [
-    "Huge waterfalls in New York State, USA.",
-    "Boats go close to the falls.",
+    "Huge waterfalls between USA and Canada.",
+    "In Spanish: Cataratas del Niágara."
   ],
   "MountRushmore.jpg": [
     "Carved faces in South Dakota, USA.",
-    "Four presidents on a granite cliff.",
+    "Four presidents on a granite cliff."
   ],
   "MonumentValley.jpg": [
     "Red rock mesas in Utah, USA.",
-    "Classic Western movie scenery.",
-  ],
-  "LakeOHara.jpg": [
-    "Turquoise lake in British Columbia, Canada.",
-    "Alpine views and clear water.",
-  ],
-  "BanffNationalPark.jpg": [
-    "Mountain park in Canada.",
-    "Blue lakes and the Rockies.",
+    "Its name means 'Valle de los Monumentos'."
   ],
   "Badlands.png": [
     "Eroded hills in Alberta, Canada.",
-    "Hoodoos and dinosaur history.",
+    "Its name means 'Tierras Malas' in Spanish."
   ],
   "ParliamentHill.jpg": [
     "Government buildings in Ottawa, Canada.",
-    "Gothic towers by the river.",
-  ],
-  "Cotswolds.jpg": [
-    "Countryside in England, UK.",
-    "Stone cottages and rolling hills.",
+    "Gothic towers by the river."
   ],
   "Harvard.jpeg": [
     "Historic university in Massachusetts, USA.",
-    "Red-brick yard and ivy look.",
+    "One of the most famous universities in the world."
   ],
   "Harrods.jpeg": [
     "Luxury store in London, UK.",
-    "Famous green-and-gold building.",
+    "Very popular for shopping in England."
   ],
   "Cambridge.jpg": [
     "City next to Boston, Massachusetts, USA.",
-    "Home to Harvard and MIT.",
+    "Home to Harvard and MIT universities."
   ],
   "Yale.jpg": [
     "Ivy League school in New Haven, USA.",
-    "Gothic-style campus buildings.",
+    "Known for its historic architecture."
   ],
-  "Oxford.png": ["University city in England, UK.", "Old colleges and spires."],
+  "Oxford.png": [
+    "University city in England, UK.",
+    "Very old colleges and tall towers."
+  ],
   "Stonehenge.jpg": [
     "Ancient stones in England, UK.",
-    "Circle of huge standing rocks.",
+    "A circle of huge standing rocks."
   ],
   "CastleHoward.jpg": [
-    "A famous baroque castle in Yorkshire.",
-    "It has appeared in several British films."
+    "A famous baroque castle in Yorkshire, England.",
+    "Appeared in several British films."
   ],
   "BigBen.jpg": [
-    "Its bell weighs more than 13 tons.",
-    "One of the most iconic symbols of London."
+    "Famous clock tower in London.",
+    "Its bell weighs more than 13 tons."
   ],
   "HolyIsland.jpg": [
-    "You can only reach it when the tide is low.",
-    "Also known as Lindisfarne."
-  ],
-  "MuseumOfModernArt.jpg": [
-    "Located in Glasgow, Scotland.",
-    "Exhibits contemporary and modern art."
+    "Also known as Lindisfarne.",
+    "In Spanish: Isla Sagrada."
   ],
   "SpaceCenter.jpg": [
-    "Learn about NASA and space exploration here.",
+    "Learn about NASA and space exploration.",
     "Located in Houston, Texas."
   ],
   "GrandCentralTerminal.jpg": [
     "A train station with a huge clock in the main hall.",
-    "One of New York City's most famous landmarks."
+    "Located in New York City."
   ],
   "ArkEncounter.jpg": [
-    "A life-sized replica of a biblical ship.",
-    "Located in Kentucky."
+    "A life-sized replica of Noah’s Ark.",
+    "Located in Kentucky, USA."
   ],
   "Yellowstone.jpg": [
     "Famous for the Old Faithful geyser.",
-    "The first national park in the world."
+    "Its name means 'Piedra Amarilla'."
   ],
   "FieldM.jpg": [
     "A natural history museum in Chicago.",
@@ -300,12 +287,8 @@ const hintsByImage = {
     "Located in Los Angeles, California."
   ],
   "BrooklynBrid.jpg": [
-    "Connects Manhattan to another New York borough.",
+    "Connects Manhattan to Brooklyn, New York.",
     "Opened in 1883."
-  ],
-  "GrandTetonNationalPark.jpg": [
-    "Famous for its sharp mountain peaks and clear lakes.",
-    "Located near Yellowstone in Wyoming."
   ],
   "BryceCanyon.jpg": [
     "Known for its rock formations called 'hoodoos'.",
@@ -313,7 +296,7 @@ const hintsByImage = {
   ],
   "Fisherman's.jpg": [
     "Famous pier with sea lions and souvenir shops.",
-    "One of San Francisco’s most visited places."
+    "Its name means 'Muelle del Pescador'."
   ],
   "UniversalStudios.jpg": [
     "Theme park dedicated to movies and TV shows.",
@@ -323,13 +306,9 @@ const hintsByImage = {
     "Known for its giant electronic billboards.",
     "Famous New Year’s Eve celebration spot."
   ],
-  "GlacierNationalPark.jpg": [
-    "Located in Montana, full of mountains and glacial lakes.",
-    "Part of the U.S.-Canada border region."
-  ],
   "GardenOfGods.jpg": [
     "Park with stunning red rock formations.",
-    "Located in Colorado Springs."
+    "Its name means 'Jardín de los Dioses'."
   ],
   "WaltDisney.jpg": [
     "The most magical place on Earth.",
@@ -337,9 +316,10 @@ const hintsByImage = {
   ],
   "MallOfAmerica.jpg": [
     "One of the largest shopping malls in the world.",
-    "Located in Minnesota, with an indoor theme park."
+    "Located in Minnesota, USA."
   ]
 };
+
 
 // ===== STATE =====
 let places = allPlaces.slice();
