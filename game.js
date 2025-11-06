@@ -5,40 +5,34 @@
 // ===== DATA =====
 const allPlaces = [
   {
-    id: 1,
-    name: "Statue of Liberty",
+    id: 17,
+    name: "Ark Encounter",
+    location: "KY",
+    image: "ArkEncounter.jpg",
+  },
+  {
+    id: 13,
+    name: "Big Ben",
+    location: "London, UK",
+    image: "BigBen.jpg",
+  },
+  {
+    id: 21,
+    name: "Brooklyn Bridge",
+    location: "NY",
+    image: "BrooklynBrid.jpg",
+  },
+  {
+    id: 23,
+    name: "Bryce Canyon National Park",
+    location: "UT",
+    image: "BryceCanyon.jpg",
+  },
+  {
+    id: 12,
+    name: "Cambridge",
     location: "USA",
-    image: "StatueLiberty.jpg",
-  },
-  {
-    id: 2,
-    name: "National Mall",
-    location: "Washington D.C.",
-    image: "NationalMall.png",
-  },
-  {
-    id: 3,
-    name: "Hollywood Sign",
-    location: "Los Angeles, CA",
-    image: "HollywoodSign.jpg",
-  },
-  {
-    id: 4,
-    name: "Golden Gate Bridge",
-    location: "San Francisco, CA",
-    image: "GoldenGate.jpg",
-  },
-  {
-    id: 5,
-    name: "Gateway Arch",
-    location: "St. Louis, Missouri",
-    image: "GatewayArch.jpg",
-  },
-  {
-    id: 6,
-    name: "Space Needle",
-    location: "Seattle, Washington",
-    image: "SpaceNeedle.jpeg",
+    image: "Cambridge.jpg",
   },
   {
     id: 7,
@@ -47,16 +41,70 @@ const allPlaces = [
     image: "CloudGate.jpg",
   },
   {
-    id: 8,
-    name: "Niagara Falls",
-    location: "New York State",
-    image: "NiagaraFalls.jpg",
+    id: 19,
+    name: "Field Museum",
+    location: "IL",
+    image: "FieldM.jpg",
   },
   {
-    id: 9,
-    name: "Mount Rushmore",
-    location: "South Dakota",
-    image: "MountRushmore.jpg",
+    id: 24,
+    name: "Fisherman's Wharf",
+    location: "CA",
+    image: "Fisherman's.jpg",
+  },
+  {
+    id: 28,
+    name: "Garden of the Gods",
+    location: "CO",
+    image: "GardenOfGods.jpg",
+  },
+  {
+    id: 5,
+    name: "Gateway Arch",
+    location: "St. Louis, Missouri",
+    image: "GatewayArch.jpg",
+  },
+  {
+    id: 27,
+    name: "Glacier National Park",
+    location: "MT",
+    image: "GlacierNationalPark.jpg",
+  },
+  {
+    id: 4,
+    name: "Golden Gate Bridge",
+    location: "San Francisco, CA",
+    image: "GoldenGate.jpg",
+  },
+  {
+    id: 16,
+    name: "Grand Central Terminal",
+    location: "NY",
+    image: "GrandCentralTerminal.jpg",
+  },
+  {
+    id: 22,
+    name: "Grand Teton National Park",
+    location: "WY",
+    image: "GrandTetonNationalPark.jpg",
+  },
+  {
+    id: 11,
+    name: "Harvard",
+    location: "Massachusetts, USA",
+    image: "Harvard.jpeg",
+  },
+  {
+    id: 3,
+    name: "Hollywood Sign",
+    location: "Los Angeles, CA",
+    image: "HollywoodSign.jpg",
+  },
+  {
+    id: 30,
+    name: "Mall of America",
+    location: "MN",
+    image: "MallOfAmerica.jpg",
   },
   {
     id: 10,
@@ -65,115 +113,112 @@ const allPlaces = [
     image: "MonumentValley.jpg",
   },
   {
-    id: 11,
-    name: "Lake O'Hara",
-    location: "British Columbia, Canada",
-    image: "LakeOHara.jpg",
-  },
-  {
-    id: 12,
-    name: "Banff National Park",
-    location: "Canada",
-    image: "BanffNationalPark.jpg",
-  },
-  {
-    id: 13,
-    name: "Badlands",
-    location: "Alberta, Canada",
-    image: "Badlands.png",
+    id: 9,
+    name: "Mount Rushmore",
+    location: "South Dakota",
+    image: "MountRushmore.jpg",
   },
   {
     id: 14,
-    name: "Parliament Hill",
-    location: "Ottawa, Canada",
-    image: "ParliamentHill.jpg",
-  },
-  { id: 15, name: "The Cotswolds", location: "UK", image: "Cotswolds.jpg" },
-  {
-    id: 16,
-    name: "Harvard",
-    location: "Massachusetts, USA",
-    image: "Harvard.jpeg",
-  },
-  { id: 17, name: "Harrods", location: "UK", image: "Harrods.jpeg" },
-  { id: 18, name: "Cambridge", location: "USA", image: "Cambridge.jpg" },
-  { id: 19, name: "Yale", location: "UK", image: "Yale.jpg" },
-  { id: 20, name: "Oxford", location: "UK", image: "Oxford.png" },
-  { id: 21, name: "Stone Henge", location: "UK", image: "Stonehenge.jpg" },
-  { id: 22, name: "Howard Castle", location: "UK", image: "CastleHoward.jpg" },
-  { id: 23, name: "Big Ben", location: "London, UK", image: "BigBen.jpg" },
-  { id: 24, name: "Holy Island", location: "UK", image: "HolyIsland.jpg" },
-  {
-    id: 25,
     name: "MuseumOfModernArt",
     location: "Scotland, UK",
     image: "MuseumOfModernArt.jpg",
   },
-  { id: 26, name: "Space Center", location: "TX", image: "SpaceCenter.jpg" },
   {
-    id: 27,
-    name: "Grand Central Terminal",
+    id: 8,
+    name: "Niagara Falls",
+    location: "New York State",
+    image: "NiagaraFalls.jpg",
+  },
+  {
+    id: 15,
+    name: "Space Center",
+    location: "TX",
+    image: "SpaceCenter.jpg",
+  },
+  {
+    id: 6,
+    name: "Space Needle",
+    location: "Seattle, Washington",
+    image: "SpaceNeedle.jpeg",
+  },
+  {
+    id: 1,
+    name: "Statue of Liberty",
+    location: "USA",
+    image: "StatueLiberty.jpg",
+  },
+  {
+    id: 26,
+    name: "Times Square",
     location: "NY",
-    image: "GrandCentralTerminal.jpg",
-  },
-  { id: 28, name: "Ark Encounter", location: "KY", image: "ArkEncounter.jpg" },
-  {
-    id: 29,
-    name: "Yellowstone National Park",
-    location: "WY",
-    image: "Yellowstone.jpg",
-  },
-  { id: 30, name: "Field Museum", location: "IL", image: "FieldM.jpg" },
-  { id: 31, name: "Venice Beach", location: "CA", image: "VeniceBeach.jpg" },
-  {
-    id: 32,
-    name: "Brooklyn Bridge",
-    location: "NY",
-    image: "BrooklynBrid.jpg",
+    image: "TimesSquare.jpg",
   },
   {
-    id: 33,
-    name: "Grand Teton National Park",
-    location: "WY",
-    image: "GrandTetonNationalPark.jpg",
-  },
-  {
-    id: 34,
-    name: "Bryce Canyon National Park",
-    location: "UT",
-    image: "BryceCanyon.jpg",
-  },
-  {
-    id: 35,
-    name: "Fisherman's Wharf",
-    location: "CA",
-    image: "Fisherman's.jpg",
-  },
-  {
-    id: 36,
+    id: 25,
     name: "Universal Studios",
     location: "FL",
     image: "UniversalStudios.jpg",
   },
-  { id: 37, name: "Times Square", location: "NY", image: "TimesSquare.jpg" },
   {
-    id: 38,
-    name: "Glacier National Park",
-    location: "MT",
-    image: "GlacierNationalPark.jpg",
+    id: 20,
+    name: "Venice Beach",
+    location: "CA",
+    image: "VeniceBeach.jpg",
   },
   {
-    id: 39,
-    name: "Garden of the Gods",
-    location: "CO",
-    image: "GardenOfGods.jpg",
+    id: 29,
+    name: "Walt Disney",
+    location: "FL",
+    image: "WaltDisney.jpg",
   },
-  { id: 40, name: "Walt Disney", location: "FL", image: "WaltDisney.jpg" },
   {
-    id: 41,
-    name: "Mall of America",
-    location: "MN",
-    image: "MallOfAmerica.jpg",
+    id: 18,
+    name: "Yellowstone National Park",
+    location: "WY",
+    image: "Yellowstone.jpg",
+  },
+  {
+    id: 31,
+    name: "Alcatraz Island",
+    location: "CA",
+    image: "AlcatrazIsland.jpg",
+  },
+  {
+    id: 32,
+    name: "Balboa Park",
+    location: "CA",
+    image: "BalboaPark.jpg",
+  },
+  {
+    id: 33,
+    name: "SeaWorld",
+    location: "CA",
+    image: "SeaWorld.jpg",
+  },
+  {
+    id: 34,
+    name: "The Sphere",
+    location: "NV",
+    image: "TheSphere .jpg",
+  },
+  {
+    id: 35,
+    name: "Walk of Fame",
+    location: "CA",
+    image: "WalkFam.jpg",
+  },
+  {
+    id: 36,
+    name: "White House",
+    location: "DC",
+    image: "WhiteHouse.jpg",
+  },
+  {
+    id: 37,
+    name: "World Trade Center",
+    location: "NY",
+    image: "WorldTrade.jpg",
   },
 ];
 
@@ -218,58 +263,17 @@ const hintsByImage = {
     "Red rock mesas in Utah, USA.",
     "Classic Western movie scenery.",
   ],
-  "LakeOHara.jpg": [
-    "Turquoise lake in British Columbia, Canada.",
-    "Alpine views and clear water.",
-  ],
-  "BanffNationalPark.jpg": [
-    "Mountain park in Canada.",
-    "Blue lakes and the Rockies.",
-  ],
-  "Badlands.png": [
-    "Eroded hills in Alberta, Canada.",
-    "Hoodoos and dinosaur history.",
-  ],
-  "ParliamentHill.jpg": [
-    "Government buildings in Ottawa, Canada.",
-    "Gothic towers by the river.",
-  ],
-  "Cotswolds.jpg": [
-    "Countryside in England, UK.",
-    "Stone cottages and rolling hills.",
-  ],
   "Harvard.jpeg": [
     "Historic university in Massachusetts, USA.",
     "Red-brick yard and ivy look.",
-  ],
-  "Harrods.jpeg": [
-    "Luxury store in London, UK.",
-    "Famous green-and-gold building.",
   ],
   "Cambridge.jpg": [
     "City next to Boston, Massachusetts, USA.",
     "Home to Harvard and MIT.",
   ],
-  "Yale.jpg": [
-    "Ivy League school in New Haven, USA.",
-    "Gothic-style campus buildings.",
-  ],
-  "Oxford.png": ["University city in England, UK.", "Old colleges and spires."],
-  "Stonehenge.jpg": [
-    "Ancient stones in England, UK.",
-    "Circle of huge standing rocks.",
-  ],
-  "CastleHoward.jpg": [
-    "A famous baroque castle in Yorkshire.",
-    "It has appeared in several British films."
-  ],
   "BigBen.jpg": [
     "Its bell weighs more than 13 tons.",
     "One of the most iconic symbols of London."
-  ],
-  "HolyIsland.jpg": [
-    "You can only reach it when the tide is low.",
-    "Also known as Lindisfarne."
   ],
   "MuseumOfModernArt.jpg": [
     "Located in Glasgow, Scotland.",
@@ -338,6 +342,34 @@ const hintsByImage = {
   "MallOfAmerica.jpg": [
     "One of the largest shopping malls in the world.",
     "Located in Minnesota, with an indoor theme park."
+  ],
+  "AlcatrazIsland.jpg": [
+    "Former federal prison on an island in San Francisco Bay.",
+    "Known for its history of housing notorious criminals."
+  ],
+  "BalboaPark.jpg": [
+    "Cultural park in San Diego, California.",
+    "Home to museums, gardens, and the San Diego Zoo."
+  ],
+  "SeaWorld.jpg": [
+    "Marine mammal park and oceanarium.",
+    "Features shows with dolphins, whales, and seals."
+  ],
+  "TheSphere .jpg": [
+    "Massive spherical structure in Las Vegas.",
+    "Located at the Venetian Resort, used for entertainment."
+  ],
+  "WalkFam.jpg": [
+    "Famous sidewalk in Hollywood with celebrity names.",
+    "Stars embedded in the ground for famous people."
+  ],
+  "WhiteHouse.jpg": [
+    "Official residence of the President of the United States.",
+    "Located in Washington, D.C."
+  ],
+  "WorldTrade.jpg": [
+    "Iconic skyscrapers in New York City.",
+    "Rebuilt after the 9/11 attacks."
   ]
 };
 
@@ -417,7 +449,7 @@ async function startGame() {
 function selectDifficulty(difficulty) {
   if (difficulty === "easy") places = allPlaces.slice(0, 14);
   else if (difficulty === "medium") places = allPlaces.slice(14, 28);
-  else if (difficulty === "hard") places = allPlaces.slice(28, 41);
+  else if (difficulty === "hard") places = allPlaces.slice(28, 37);
 
   totalSlides.textContent = places.length;
   currentIndex = 0;
