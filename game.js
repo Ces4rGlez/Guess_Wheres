@@ -12,7 +12,7 @@ const allPlaces = [
   { id: 5, name: "Mount Rushmore", location: "South Dakota", image: "MountRushmore.jpg" },
   { id: 6, name: "Niagara Falls", location: "New York State", image: "NiagaraFalls.jpg" },
   { id: 7, name: "Big Ben", location: "London, UK", image: "BigBen.jpg" },
-  { id: 8, name: "Stone Henge", location: "UK", image: "Stonehenge.jpg" },
+
   { id: 9, name: "Gateway Arch", location: "St. Louis, Missouri", image: "GatewayArch.jpg" },
   { id: 10, name: "Walt Disney", location: "FL", image: "WaltDisney.jpg" },
   { id: 11, name: "Universal Studios", location: "FL", image: "UniversalStudios.jpg" },
@@ -30,7 +30,6 @@ const allPlaces = [
   { id: 21, name: "Fisherman's Wharf", location: "CA", image: "Fisherman's.jpg" },
   { id: 22, name: "Space Center", location: "TX", image: "SpaceCenter.jpg" },
   { id: 23, name: "Garden of the Gods", location: "CO", image: "GardenOfGods.jpg" },
-  { id: 24, name: "Harrods", location: "London, UK", image: "Harrods.jpeg" },
   { id: 25, name: "The Sphere", location: "Las Vegas, NV", image: "TheSphere.jpg" },
   { id: 26, name: "Balboa Park", location: "San Diego, CA", image: "BalboaPark.jpg" },
   { id: 27, name: "Mall of America", location: "MN", image: "MallOfAmerica.jpg" },
@@ -42,13 +41,9 @@ const allPlaces = [
   { id: 31, name: "Bryce Canyon National Park", location: "UT", image: "BryceCanyon.jpg" },
   { id: 32, name: "Grand Teton National Park", location: "WY", image: "GrandTetonNationalPark.jpg" },
   { id: 33, name: "Ark Encounter", location: "KY", image: "ArkEncounter.jpg" },
-  { id: 34, name: "Parliament Hill", location: "Ottawa, Canada", image: "ParliamentHill.jpg" },
-  { id: 35, name: "Holy Island", location: "UK", image: "HolyIsland.jpg" },
-  { id: 36, name: "Howard Castle", location: "UK", image: "CastleHoward.jpg" },
+
   { id: 37, name: "Field Museum", location: "IL", image: "FieldM.jpg" },
   { id: 38, name: "Cambridge", location: "USA", image: "Cambridge.jpg" },
-  { id: 39, name: "Yale", location: "UK", image: "Yale.jpg" },
-  { id: 40, name: "Oxford", location: "UK", image: "Oxford.png" },
   { id: 41, name: "MuseumOfModernArt", location: "Scotland, UK", image: "MuseumOfModernArt.jpg" },
   { id: 42, name: "Alcatraz Island", location: "San Francisco, CA", image: "AlcatrazIsland.jpg" },
   { id: 43, name: "Denver Botanic Gardens", location: "Denver, CO", image: "DenverBotanicGardens.jpg" },
@@ -102,10 +97,7 @@ const hintsByImage = {
     "Eroded hills in Alberta, Canada.",
     "Its name means 'Tierras Malas' in Spanish."
   ],
-  "ParliamentHill.jpg": [
-    "Government buildings in Ottawa, Canada.",
-    "Gothic towers by the river."
-  ],
+ 
   "Harvard.jpeg": [
     "Historic university in Massachusetts, USA.",
     "One of the most famous universities in the world."
@@ -114,26 +106,20 @@ const hintsByImage = {
     "Luxury store in London, UK.",
     "Very popular for shopping in England."
   ],
+  "GlacierNationalPark.jpg": [
+    "National park with glaciers and lakes.",
+    "Located in Montana, USA."
+  ],
   "Cambridge.jpg": [
     "City next to Boston, Massachusetts, USA.",
     "Home to Harvard and MIT universities."
   ],
-  "Yale.jpg": [
-    "Ivy League school in New Haven, USA.",
-    "Known for its historic architecture."
-  ],
-  "Oxford.png": [
-    "University city in England, UK.",
-    "Very old colleges and tall towers."
-  ],
+  
   "Stonehenge.jpg": [
     "Ancient stones in England, UK.",
     "A circle of huge standing rocks."
   ],
-  "CastleHoward.jpg": [
-    "A famous baroque castle in Yorkshire, England.",
-    "Appeared in several British films."
-  ],
+
   "BigBen.jpg": [
     "Famous clock tower in London.",
     "Its bell weighs more than 13 tons."
@@ -233,6 +219,14 @@ const hintsByImage = {
   "WorldTradeCenter.jpg": [
     "Modern complex rebuilt after 9/11.",
     "Home to One World Observatory in New York City."
+  ],
+  "GrandTetonNationalPark.jpg": [
+    "National park in Wyoming with stunning mountain views.",
+    "Features the Teton Range and Jackson Lake."
+  ],
+  "MuseumOfModernArt.jpg": [
+    "Famous art museum in New York City.",
+    "Known for its modern and contemporary art collections."
   ]
 };
 
