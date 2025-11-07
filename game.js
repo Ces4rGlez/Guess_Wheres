@@ -4,178 +4,58 @@
 
 // ===== DATA =====
 const allPlaces = [
-  {
-    id: 1,
-    name: "Statue of Liberty",
-    location: "USA",
-    image: "StatueLiberty.jpg",
-  },
-  {
-    id: 2,
-    name: "National Mall",
-    location: "Washington D.C.",
-    image: "NationalMall.png",
-  },
-  {
-    id: 3,
-    name: "Hollywood Sign",
-    location: "Los Angeles, CA",
-    image: "HollywoodSign.jpg",
-  },
-  {
-    id: 4,
-    name: "Golden Gate Bridge",
-    location: "San Francisco, CA",
-    image: "GoldenGate.jpg",
-  },
-  {
-    id: 5,
-    name: "Gateway Arch",
-    location: "St. Louis, Missouri",
-    image: "GatewayArch.jpg",
-  },
-  {
-    id: 6,
-    name: "Space Needle",
-    location: "Seattle, Washington",
-    image: "SpaceNeedle.jpeg",
-  },
-  {
-    id: 7,
-    name: "Cloud Gate",
-    location: "Chicago, Illinois",
-    image: "CloudGate.jpg",
-  },
-  {
-    id: 8,
-    name: "Niagara Falls",
-    location: "New York State",
-    image: "NiagaraFalls.jpg",
-  },
-  {
-    id: 9,
-    name: "Mount Rushmore",
-    location: "South Dakota",
-    image: "MountRushmore.jpg",
-  },
-  {
-    id: 10,
-    name: "Monument Valley",
-    location: "Utah",
-    image: "MonumentValley.jpg",
-  },
-  {
-    id: 11,
-    name: "Lake O'Hara",
-    location: "British Columbia, Canada",
-    image: "LakeOHara.jpg",
-  },
-  {
-    id: 12,
-    name: "Banff National Park",
-    location: "Canada",
-    image: "BanffNationalPark.jpg",
-  },
-  {
-    id: 13,
-    name: "Badlands",
-    location: "Alberta, Canada",
-    image: "Badlands.png",
-  },
-  {
-    id: 14,
-    name: "Parliament Hill",
-    location: "Ottawa, Canada",
-    image: "ParliamentHill.jpg",
-  },
-  { id: 15, name: "The Cotswolds", location: "UK", image: "Cotswolds.jpg" },
-  {
-    id: 16,
-    name: "Harvard",
-    location: "Massachusetts, USA",
-    image: "Harvard.jpeg",
-  },
-  { id: 17, name: "Harrods", location: "UK", image: "Harrods.jpeg" },
-  { id: 18, name: "Cambridge", location: "USA", image: "Cambridge.jpg" },
-  { id: 19, name: "Yale", location: "UK", image: "Yale.jpg" },
-  { id: 20, name: "Oxford", location: "UK", image: "Oxford.png" },
-  { id: 21, name: "Stone Henge", location: "UK", image: "Stonehenge.jpg" },
-  { id: 22, name: "Howard Castle", location: "UK", image: "CastleHoward.jpg" },
-  { id: 23, name: "Big Ben", location: "London, UK", image: "BigBen.jpg" },
-  { id: 24, name: "Holy Island", location: "UK", image: "HolyIsland.jpg" },
-  {
-    id: 25,
-    name: "MuseumOfModernArt",
-    location: "Scotland, UK",
-    image: "MuseumOfModernArt.jpg",
-  },
-  { id: 26, name: "Space Center", location: "TX", image: "SpaceCenter.jpg" },
-  {
-    id: 27,
-    name: "Grand Central Terminal",
-    location: "NY",
-    image: "GrandCentralTerminal.jpg",
-  },
-  { id: 28, name: "Ark Encounter", location: "KY", image: "ArkEncounter.jpg" },
-  {
-    id: 29,
-    name: "Yellowstone National Park",
-    location: "WY",
-    image: "Yellowstone.jpg",
-  },
-  { id: 30, name: "Field Museum", location: "IL", image: "FieldM.jpg" },
-  { id: 31, name: "Venice Beach", location: "CA", image: "VeniceBeach.jpg" },
-  {
-    id: 32,
-    name: "Brooklyn Bridge",
-    location: "NY",
-    image: "BrooklynBrid.jpg",
-  },
-  {
-    id: 33,
-    name: "Grand Teton National Park",
-    location: "WY",
-    image: "GrandTetonNationalPark.jpg",
-  },
-  {
-    id: 34,
-    name: "Bryce Canyon National Park",
-    location: "UT",
-    image: "BryceCanyon.jpg",
-  },
-  {
-    id: 35,
-    name: "Fisherman's Wharf",
-    location: "CA",
-    image: "Fisherman's.jpg",
-  },
-  {
-    id: 36,
-    name: "Universal Studios",
-    location: "FL",
-    image: "UniversalStudios.jpg",
-  },
-  { id: 37, name: "Times Square", location: "NY", image: "TimesSquare.jpg" },
-  {
-    id: 38,
-    name: "Glacier National Park",
-    location: "MT",
-    image: "GlacierNationalPark.jpg",
-  },
-  {
-    id: 39,
-    name: "Garden of the Gods",
-    location: "CO",
-    image: "GardenOfGods.jpg",
-  },
-  { id: 40, name: "Walt Disney", location: "FL", image: "WaltDisney.jpg" },
-  {
-    id: 41,
-    name: "Mall of America",
-    location: "MN",
-    image: "MallOfAmerica.jpg",
-  },
+  // ====== FÁCIL (1–15) ======
+  { id: 1, name: "Statue of Liberty", location: "USA", image: "StatueLiberty.jpg" },
+  { id: 2, name: "Golden Gate Bridge", location: "San Francisco, CA", image: "GoldenGate.jpg" },
+  { id: 3, name: "Hollywood Sign", location: "Los Angeles, CA", image: "HollywoodSign.jpg" },
+  { id: 4, name: "Times Square", location: "NY", image: "TimesSquare.jpg" },
+  { id: 5, name: "Mount Rushmore", location: "South Dakota", image: "MountRushmore.jpg" },
+  { id: 6, name: "Niagara Falls", location: "New York State", image: "NiagaraFalls.jpg" },
+  { id: 7, name: "Big Ben", location: "London, UK", image: "BigBen.jpg" },
+  { id: 8, name: "Stone Henge", location: "UK", image: "Stonehenge.jpg" },
+  { id: 9, name: "Gateway Arch", location: "St. Louis, Missouri", image: "GatewayArch.jpg" },
+  { id: 10, name: "Walt Disney", location: "FL", image: "WaltDisney.jpg" },
+  { id: 11, name: "Universal Studios", location: "FL", image: "UniversalStudios.jpg" },
+  { id: 12, name: "White House", location: "Washington, D.C.", image: "WhiteHouse.jpg" },
+  { id: 13, name: "The Strip", location: "Las Vegas, NV", image: "TheStrip.jpg" },
+  { id: 14, name: "Brooklyn Bridge", location: "NY", image: "BrooklynBrid.jpg" },
+  { id: 15, name: "Space Needle", location: "Seattle, Washington", image: "SpaceNeedle.jpeg" },
+
+  // ====== INTERMEDIO (16–29) ======
+  { id: 16, name: "Yellowstone National Park", location: "WY", image: "Yellowstone.jpg" },
+  { id: 17, name: "Monument Valley", location: "Utah", image: "MonumentValley.jpg" },
+  { id: 18, name: "Grand Central Terminal", location: "NY", image: "GrandCentralTerminal.jpg" },
+  { id: 19, name: "SeaWorld", location: "San Diego, CA", image: "SeaWorld.jpg" },
+  { id: 20, name: "Cloud Gate", location: "Chicago, Illinois", image: "CloudGate.jpg" },
+  { id: 21, name: "Fisherman's Wharf", location: "CA", image: "Fisherman's.jpg" },
+  { id: 22, name: "Space Center", location: "TX", image: "SpaceCenter.jpg" },
+  { id: 23, name: "Garden of the Gods", location: "CO", image: "GardenOfGods.jpg" },
+  { id: 24, name: "Harrods", location: "London, UK", image: "Harrods.jpeg" },
+  { id: 25, name: "The Sphere", location: "Las Vegas, NV", image: "TheSphere.jpg" },
+  { id: 26, name: "Balboa Park", location: "San Diego, CA", image: "BalboaPark.jpg" },
+  { id: 27, name: "Mall of America", location: "MN", image: "MallOfAmerica.jpg" },
+  { id: 28, name: "Harvard", location: "Massachusetts, USA", image: "Harvard.jpeg" },
+  { id: 29, name: "World Trade Center", location: "New York, NY", image: "WorldTradeCenter.jpg" },
+
+  // ====== DIFÍCIL (30–44) ======
+  { id: 30, name: "Walk of Fame", location: "Los Angeles, CA", image: "WalkOfFame.jpg" },
+  { id: 31, name: "Bryce Canyon National Park", location: "UT", image: "BryceCanyon.jpg" },
+  { id: 32, name: "Grand Teton National Park", location: "WY", image: "GrandTetonNationalPark.jpg" },
+  { id: 33, name: "Ark Encounter", location: "KY", image: "ArkEncounter.jpg" },
+  { id: 34, name: "Parliament Hill", location: "Ottawa, Canada", image: "ParliamentHill.jpg" },
+  { id: 35, name: "Holy Island", location: "UK", image: "HolyIsland.jpg" },
+  { id: 36, name: "Howard Castle", location: "UK", image: "CastleHoward.jpg" },
+  { id: 37, name: "Field Museum", location: "IL", image: "FieldM.jpg" },
+  { id: 38, name: "Cambridge", location: "USA", image: "Cambridge.jpg" },
+  { id: 39, name: "Yale", location: "UK", image: "Yale.jpg" },
+  { id: 40, name: "Oxford", location: "UK", image: "Oxford.png" },
+  { id: 41, name: "MuseumOfModernArt", location: "Scotland, UK", image: "MuseumOfModernArt.jpg" },
+  { id: 42, name: "Alcatraz Island", location: "San Francisco, CA", image: "AlcatrazIsland.jpg" },
+  { id: 43, name: "Denver Botanic Gardens", location: "Denver, CO", image: "DenverBotanicGardens.jpg" },
+  { id: 44, name: "National Mall", location: "Washington D.C.", image: "NationalMall.png" }
 ];
+
+
 
 const hintsByImage = {
   "StatueLiberty.jpg": [
@@ -317,6 +197,42 @@ const hintsByImage = {
   "MallOfAmerica.jpg": [
     "One of the largest shopping malls in the world.",
     "Located in Minnesota, USA."
+  ],
+  "AlcatrazIsland.jpg": [
+    "Former prison located on an island in San Francisco Bay.",
+    "Famous for being nearly impossible to escape."
+  ],
+  "BalboaPark.jpg": [
+    "Large urban park in San Diego, California.",
+    "Home to museums, gardens, and the San Diego Zoo."
+  ],
+  "DenverBotanicGardens.jpg": [
+    "Beautiful gardens in Denver, Colorado.",
+    "Features plants from all around the world."
+  ],
+  "SeaWorld.jpg": [
+    "Marine theme park with dolphins and orcas.",
+    "Located in San Diego, California."
+  ],
+  "TheSphere.jpg": [
+    "Gigantic LED entertainment dome in Las Vegas.",
+    "Known for its stunning 360° visuals."
+  ],
+  "TheStrip.jpg": [
+    "Famous avenue full of casinos and hotels.",
+    "The main attraction in Las Vegas, Nevada."
+  ],
+  "WalkOfFame.jpg": [
+    "Stars on the sidewalk honoring celebrities.",
+    "Located on Hollywood Boulevard, Los Angeles."
+  ],
+  "WhiteHouse.jpg": [ 
+    "Official residence of the President of the United States.",
+    "Located at 1600 Pennsylvania Avenue, Washington D.C."
+  ],
+  "WorldTradeCenter.jpg": [
+    "Modern complex rebuilt after 9/11.",
+    "Home to One World Observatory in New York City."
   ]
 };
 
@@ -376,17 +292,36 @@ document.addEventListener("keydown", (e) => {
   else if (e.key.toLowerCase() === "h") hintToggleBtn?.click();
 });
 
+let hintStep = 0; // controla cuántas pistas se han mostrado
+
 hintToggleBtn?.addEventListener("click", () => {
-  const isOpen = !hintsPanel.hasAttribute("hidden");
-  if (isOpen) {
-    hintsPanel.setAttribute("hidden", "");
-    hintToggleBtn.setAttribute("aria-expanded", "false");
-  } else {
-    renderHintsForCurrent();
+  const imgFile = places[currentIndex]?.image;
+  const hints = hintsByImage[imgFile] || [];
+  
+  // Si el panel está oculto, se muestra y se reinicia el contador de pistas
+  if (hintsPanel.hasAttribute("hidden")) {
     hintsPanel.removeAttribute("hidden");
     hintToggleBtn.setAttribute("aria-expanded", "true");
+    hintStep = 0; // reinicia el contador
+    hint1Text.textContent = "";
+    hint2Text.textContent = "";
+  }
+
+  // Mostrar la siguiente pista según el contador
+  if (hintStep === 0 && hints.length > 0) {
+    hint1Text.textContent = hints[0];
+    hintStep++;
+  } else if (hintStep === 1 && hints.length > 1) {
+    hint2Text.textContent = hints[1];
+    hintStep++;
+  } else {
+    // Si ya mostró todas las pistas, oculta el panel
+    hintsPanel.setAttribute("hidden", "");
+    hintToggleBtn.setAttribute("aria-expanded", "false");
+    hintStep = 0; // reinicia
   }
 });
+
 
 // ===== FLUJO =====
 async function startGame() {
@@ -395,9 +330,9 @@ async function startGame() {
 }
 
 function selectDifficulty(difficulty) {
-  if (difficulty === "easy") places = allPlaces.slice(0, 14);
-  else if (difficulty === "medium") places = allPlaces.slice(14, 28);
-  else if (difficulty === "hard") places = allPlaces.slice(28, 41);
+  if (difficulty === "easy") places = allPlaces.slice(0, 15);
+  else if (difficulty === "medium") places = allPlaces.slice(15, 29);
+  else if (difficulty === "hard") places = allPlaces.slice(29, 44);
 
   totalSlides.textContent = places.length;
   currentIndex = 0;
